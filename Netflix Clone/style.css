@@ -1,0 +1,380 @@
+*{
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.main{
+    background-image: url(images/oneimage.jpg);
+    background-position: center center;   /*this is used to center the background image from both x and y axis*/
+    background-repeat: no-repeat;         /*this is to ensure the background doesnt repeat itself when its small for the the device.*/
+    background-size: max(92vh, 2000px);    /*this is used so that according to the device's size the maximum value between both these will be chosen for backgr size*/
+    width: 100vw;
+    height: 100vh;
+    background: linear-grad;
+}
+
+.main .box{
+    width: 100%;
+    height: 100vh;
+    opacity: 0.59;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    background: rgb(0, 0, 0);
+
+}
+
+nav img{
+    width: 148px;
+    padding: 0px 50px;
+}
+
+nav{
+    width: 100vw;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+    gap: 300px;
+    position: relative;
+    background: linear-gradient(180deg, rgba(0,0,0,0.6629026610644257) 16%, rgba(9,9,121,0) 96%);
+    
+}
+
+nav .button{
+    display: flex;
+    justify-content:center ;
+    align-items:center ;
+    gap: 20px;
+    padding: 0px 50px;
+}
+
+nav .button1{
+    width: 121px;
+    height: 35px;
+    background-color: transparent;
+    border: 1.5px solid #d0cece;
+    border-radius: 4px;
+    color: white;
+    font-size: 98%;
+    
+}
+
+nav .button2{
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 88%;
+    font-weight: bold;
+    background-color: rgb(225,0,0);
+}
+
+select{
+    background-color:transparent;
+    border: none;
+    color: white;
+}
+
+.coverpagecontent1{
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px; 
+    margin-top: 180px;
+    padding: 0px 50px;
+}
+
+.coverpagecontent1 .line1{
+    font-size: 330%;
+    font-weight: bold;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+.coverpagecontent1 .line2{
+    font-size: 155%;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-weight: 450;
+}
+
+.coverpagecontent1 .line3{
+    font-size: 135%;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-weight: 455;
+}
+
+.coverpagecontent2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+    gap: 10px;
+}
+
+.coverpagecontent2 .email{
+    width: 330px;
+    height: 50px;
+    border: 2px solid rgb(118, 117, 117);
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 100%;
+    color: rgb(160, 157, 157);
+    background-color: black;
+    opacity: 0.7;
+    
+}
+
+::placeholder{
+    color: rgb(232, 227, 227);
+    padding: 17px;
+}
+
+.coverpagecontent2 .button3{
+    width: 230px;
+    height: 50px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-size: 150%;
+    font-weight: 700;
+    color: white;
+    background-color:rgb(225,0,0) ;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;            /*it is so that the arrow and the text aligns itself correctly*/
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1050px){
+    .coverpagecontent1{
+        text-align: center;
+    }
+
+    .nav{
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+
+@media screen and(min-width: 700px){
+    .main{
+        height: 100vh;
+        width: 100vw;
+
+    }
+    .nav{
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+}
+
+.seperationline{
+    height: 7px;
+    width: 100vw;
+    background-color: rgb(38, 36, 36);
+    overflow-x: hidden;
+    
+}
+
+.blackbox{
+    height: 82vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.blackbox .tvcontent{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px;
+}
+
+.biglinetvcontent{
+    font-size: 290%;
+    font-weight: 900;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    margin:20px 0px;
+}
+.smalllinetvcontent{
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-size: 150%;
+}
+
+.tv{
+    width: 530px;
+    height: 409px;
+    padding: 40px;
+    position: relative;
+}
+
+.blackbox .tvvideo{
+    position: relative;
+    
+    bottom: 409px;
+    height: 300px;
+    width: 385px;
+    left: 110px;
+}
+
+.main3 .blackbox .mobile{
+    padding: 40px;
+}
+.main4 .blackbox .mac img{
+    padding: 40px;
+    width: 615px;
+    position: relative;
+    z-index: 1;
+}
+
+.main4 .blackbox .mac{
+    width: 614px;
+    position: relative;
+    top: 20px;
+}
+
+.blackbox .macvideo{
+    position: relative;
+    bottom: 470px;
+    left: 148px;
+    width: 390px;
+}
+
+.blackbox .maccontent{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+}
+
+.main6 .faq{
+    height: 140vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.faq .heading{
+    font-size: 290%;
+    font-weight: 900;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    padding: 38px;
+}
+
+.faqbox{
+    height: 80px;
+    width: 75vw;
+    background-color: rgb(49, 48, 48);
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-size: 160%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faqbox:hover{                          /* this can be used in case when u want to hover any box or line*/
+    background-color: rgb(72, 72, 72);
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+.faqbox .faqtest{
+    padding: 0px 25px;
+}
+
+.faqbox img{
+    padding-right: 25px;
+}
+
+.faq .faqbelow{
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-size: 135%;
+    padding-top: 25px;
+    
+}
+
+footer{
+    background-color: black;
+    height: 65vh;
+    width: 100vw;
+    
+}
+
+.footerheading{
+    color: rgba(255,255,255,0.7);
+    font-size: 105%;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    padding: 28px 0px;
+}
+
+.footercontent{
+    padding: 60px 180px;
+}
+
+.footerheading span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 35px 35px 35px 35px;
+    gap: 0px 170px;
+    color: white;
+}
+
+.grid-items{
+    color: rgba(255,255,255,0.7);
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+
+.footercontent .button{
+    padding: 10px 0px;
+}
+
+.footercontent .button1{
+    width: 121px;
+    height: 35px;
+    background-color: transparent;
+    border: 1.5px solid #d0cece;
+    border-radius: 4px;
+    color: white;
+    font-size: 98%;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    
+}
+
+.endingline{
+    color: rgba(255,255,255,0.7);
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif ;
+    padding: 15px 0px;
+}
+
+
+
+
+
+
+
